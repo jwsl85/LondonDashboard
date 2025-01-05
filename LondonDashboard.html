@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>London City Dashboard</title>
+
+   <script src="index.js"></script> 
+
+   <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "AIzaSyDTXnZvPceTcpvifeGsntZVYUY5zu7LPKU",
+      v: "weekly",
+      region: "GB",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+  </script>
+ 
+   <!-- UIKit CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css" rel="stylesheet">
+
+   <!-- eCharts.js -->
+   <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+
+ <!-- Header Bar -->
+ <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center uk-padding-small">
+        <h1>Where should you live in London?</h1>
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center uk-padding-small">
+        <h3>This dashboard is intended to help people decide where to live in London</h3>
+    </div>
+</nav>
+ </div>
+
+    <div class="grid-container">
+    <div class="grid-item"><iframe title="London borough populations (2021 census)" aria-label="Map" id="datawrapper-chart-6oB6C" src="https://datawrapper.dwcdn.net/6oB6C/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="610" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script></div>
+
+    <div class="grid-item"><iframe title="Number of children in absolute poverty by borough ward" aria-label="Map" id="datawrapper-chart-JkjRt" src="https://datawrapper.dwcdn.net/JkjRt/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="610" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script></div>
+
+    <div class="grid-item"><iframe title="Total crime rate in London" aria-label="Map" id="datawrapper-chart-eHUc0" src="https://datawrapper.dwcdn.net/eHUc0/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="610" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script></div>
+
+
+    <div class="grid-item"><iframe title="Average rental cost in London" aria-label="Map" id="datawrapper-chart-0ozTL" src="https://datawrapper.dwcdn.net/0ozTL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="625" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script></div>
+
+<div class="grid-item-5">
+    <div id="map"></div>
+       
+</div>
+
+ <!-- UIKit JS -->
+ <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
+
+
+</body>
+</html>
