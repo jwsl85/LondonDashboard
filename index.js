@@ -1,8 +1,3 @@
-// <script src="https://unpkg.com/@deck.gl/core@latest/dist.min.js"></script>
-// <script src="https://unpkg.com/@deck.gl/google-maps@latest/dist.min.js"></script>
-const TileLayer = deck.TileLayer;
-const GoogleMapsOverlay = deck.GoogleMapsOverlay;
-
 let map;
 
 async function initMap() {
@@ -15,9 +10,9 @@ async function initMap() {
 
   const apiKey = 'AlzaSyDTXnZvPceTcpvifeGsntZVY-UY5zu7LPKU';
   const heatmapType = 'GBR_DEFRA'
-  const deckOverlay = new GoogleMapsOverlay({
+  const deckOverlay = new deck.GoogleMapsOverlay({
     layers: [
-      new TileLayer({
+      new deck.TileLayer({
         id: 'heatmap-tiles',
         data: 'https://airquality.googleapis.com/v1/mapTypes/'+ heatmapType +'/heatmapTiles/{z}/{x}/{y}?key=' + apiKey,
       })
