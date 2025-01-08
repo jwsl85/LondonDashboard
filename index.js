@@ -10,7 +10,7 @@ async function initMap() {
 
   map = new Map(document.getElementById("map"), {
     center: { lat: 51.50736618041992, lng: -0.1276291161775589 },
-    zoom: 4,
+    zoom: 10,
   });
 
   const apiKey = 'AlzaSyDTXnZvPceTcpvifeGsntZVY-UY5zu7LPKU';
