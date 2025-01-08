@@ -1,6 +1,7 @@
 // <script src="https://unpkg.com/@deck.gl/core@latest/dist.min.js"></script>
 // <script src="https://unpkg.com/@deck.gl/google-maps@latest/dist.min.js"></script>
-const {TileLayer, GoogleMapsOverlay} = deck;
+const TileLayer = deck.TileLayer;
+const GoogleMapsOverlay = deck.GoogleMapsOverlay;
 
 let map;
 
