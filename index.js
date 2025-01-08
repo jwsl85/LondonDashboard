@@ -8,7 +8,7 @@ async function initMap() {
     zoom: 10,
   });
 
-  const apiKey = 'AlzaSyDTXnZvPceTcpvifeGsntZVY-UY5zu7LPKU';
+  const apiKey = 'AIzaSyDTXnZvPceTcpvifeGsntZVYUY5zu7LPKU';
   const heatmapType = 'GBR_DEFRA'
   const deckOverlay = new deck.GoogleMapsOverlay({
     layers: [
